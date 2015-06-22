@@ -30,14 +30,10 @@ module.exports = function (grunt) {
 				options: {
 					urls: [
 						'http://127.0.0.1:9998/',
-						'http://127.0.0.1:9998/amd.html',
 						'http://127.0.0.1:9998/encoding.html?integration_baseurl=http://127.0.0.1:9998/'
 					]
 				}
 			},
-		},
-		nodeunit: {
-			all: 'test/commonjs.js'
 		},
 		jshint: {
 			options: {
@@ -234,7 +230,7 @@ module.exports = function (grunt) {
 	}
 
 	grunt.registerTask('saucelabs', ['connect:build-sauce', 'saucelabs-qunit']);
-	grunt.registerTask('test', ['jshint', 'jscs', 'connect:build-qunit', 'qunit', 'nodeunit']);
+	grunt.registerTask('test', ['jshint', 'jscs', 'connect:build-qunit', 'qunit']);
 
 	grunt.registerTask('dev', ['test', 'uglify', 'compare_size']);
 	grunt.registerTask('ci', ['test', 'saucelabs']);
