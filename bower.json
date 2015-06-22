@@ -1,7 +1,19 @@
 {
-  "name": "js-cookie",
+  "name": "js-cookie-lite",
   "main": [
     "src/js.cookie.js"
   ],
-  "ignore": []
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "2.0.1",
+  "homepage": "https://github.com/gboiko/js-cookie",
+  "authors": [
+    "Greg <gboiko@searshc.com>"
+  ],
+  "license": "MIT"
 }
