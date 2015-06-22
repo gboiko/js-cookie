@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/js-cookie/js-cookie.git"
+    "url": "git://github.com/gboiko/js-cookie.git"
   },
   "author": "Klaus Hartl",
   "license": "MIT",
